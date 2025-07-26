@@ -6,7 +6,9 @@ const prisma = new PrismaClient();
 
 app.use(express.json());
 
-app.get('/api/samples', async (req, res) => {
+import { Request, Response } from 'express';
+
+app.get('/api/samples', async (req: Request, res: Response) => {
   const samples = await prisma.sample.findMany();
   res.json(samples);
 });
