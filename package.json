@@ -1,0 +1,8 @@
+{
+  "name": "testmate-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ]
+}
